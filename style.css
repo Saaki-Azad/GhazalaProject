@@ -119,6 +119,7 @@ li{
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px; 
+    height: auto;
     text-align: center;
     font-family: arial;
     margin: 5px;
@@ -126,7 +127,7 @@ li{
   
   .product_card {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     margin-top: 20px;
     
@@ -134,6 +135,7 @@ li{
   
   .card_dis {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
@@ -185,12 +187,13 @@ li{
   }
 
 /* footer */
-/* footer{
-    background: #7b8862;
+footer{
+    /* background: #797d70; */
     padding: 10px 20px;
     text-transform: uppercase;
     color: rgb(8, 1, 1);
-} */
+    width: 300px;
+}
 
 .footer-basic {
     padding: 40px 0;
@@ -388,9 +391,22 @@ input[type=text], select, textarea {
   .heading{
     display: none;
 }
+
+.product_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 900px){
+.card_dis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+/* @media screen and (max-width: 900px){
   .heading{
     position: absolute;
     color: white;
@@ -398,5 +414,95 @@ input[type=text], select, textarea {
     left: 25%;
     font-size: 50px;
   }
-}
+} */
 
+
+@media screen and (max-width: 835px) {
+  .menu {
+  display: none;
+  }
+  
+  .menu-icon {
+  display: block;
+  cursor: pointer;
+  }
+  
+  nav ul li {
+  display: block;
+  text-align: center;
+  }
+  
+  nav .menu.active {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .heading{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 25%;
+    font-size: 50px;
+  }
+  
+  .product_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  }
+  
+  .card_dis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  max-width: 400px;
+  }
+  
+  .card_dis img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .card_dis h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  }
+  
+  .card_dis p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  }
+  
+  .card_dis button {
+  font-size: 1rem;
+  }
+  
+  .footer-basic {
+  padding: 20px 0;
+  }
+  
+  .footer-basic ul {
+  font-size: 16px;
+  margin-bottom: 20px;
+  }
+  
+  .footer-basic .social {
+  padding-bottom: 20px;
+  }
+  
+  .footer-basic .social > a {
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 5px;
+  }
+  
+  .footer-basic .copyright {
+  font-size: 12px;
+  margin-top: 10px;
+  }
+  }
